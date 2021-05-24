@@ -49,12 +49,12 @@ router.put("/:id", (req, res) => {
                 member.name = updateMember.name ? updateMember.name : member.name;
                 member.email = updateMember.email ? updateMember.email : member.email;   
                 
-            res.json({ msg: "Member updated", member})
+            res.json({ msg: "Member updated", member })
         }
     })
     }
     else {
-        res.status(400).json({ msg: ""})
+            res.status(400).json({ msg: ""})
     }
 })
 
